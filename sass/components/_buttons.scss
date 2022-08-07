@@ -1,0 +1,65 @@
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: var(--bg2);
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    row-gap: 1.5rem;
+}
+.btn{
+
+    &:visited,&:link{
+        background-color: var(--kbg5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text1);
+        text-decoration: none;
+        min-height: 6rem;
+        min-width: 6rem;
+        border-radius: .5rem;
+        box-shadow: 0 .5rem var(--kbg6);
+        transition: box-shadow .01s;
+        
+    }
+
+
+
+    &--del:visited,&--del:link{
+        background-color: var(--kbg1) ;
+        box-shadow: 0 .5rem var(--kbg2);
+        color: var(--text3);
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    &--equal:visited,&--equal:link{
+        background-color: var(--kbg3);
+        box-shadow: 0 .5rem var(--kbg4);
+        color: var(--text3);
+        grid-column: 3/5;
+    }
+    &--reset:visited,&--reset:link{
+        background-color: var(--kbg1) ;
+        box-shadow: 0 .5rem var(--kbg2);
+        color: var(--text3);
+        text-transform: uppercase;
+        font-size: 2rem;
+        grid-column: 1/3;
+    }
+
+
+
+
+    &:hover{
+        filter:brightness(110%);
+    }
+    &:active{
+        filter:brightness(110%);
+       
+        box-shadow: 0 0rem var(--kbg6);
+    }
+
+
+    
+}

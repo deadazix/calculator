@@ -1,0 +1,9 @@
+.label{
+    background-color:var(--bg3);
+    padding: 2rem 2rem;
+    text-align: right;
+    border-radius: .5rem;
+    &__number{
+        font-size: 3.2rem;
+    }
+}

@@ -1,0 +1,28 @@
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        font-size: 2.4rem;
+    }
+    &__right{
+        display: flex;
+        align-items: flex-end;
+        gap: 2rem;
+        font-size: 1.2rem;
+    }
+    &__theme-label{
+        margin-bottom: 3px;
+    }
+    &__numbers{
+        display: flex;
+        justify-content: space-around;
+        padding: 1px 0;
+
+    }
+    &__number{
+        text-decoration: none;
+        color:var(--text3);
+        
+    }
+}
